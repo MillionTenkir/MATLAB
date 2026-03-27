@@ -2,5 +2,11 @@ X = readtable("filename.xls","Sheet","Sheet1","ReadRowNames",true,"ReadVariableN
 
 bool1=(string(X.Gender))=="Female";
 bool2=X.Age>=25 & X.Age<=40;
+%% resultTable = X(bool3, {'Id', 'Gender', 'Age'});
 
-[X.Id bool1 bool2]
+FirstNameA=X.FirstName;
+bool4=startsWith(FirstNameA, "E");
+
+
+bool3=(bool1 & bool2) | bool4 ;
+[X.Id bool1 bool2 bool3 bool4];
