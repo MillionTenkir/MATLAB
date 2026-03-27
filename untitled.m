@@ -1,0 +1,1 @@
+X=readtable("filename.xls","Sheet","Sheet1","ReadRowNames",true, "ReadVariableNames",true)
