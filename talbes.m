@@ -9,6 +9,6 @@ bool4=startsWith(FirstNameA, "E");
 
 
 bool3=(bool1 & bool2) ;
-[X.Id bool1 bool2 bool3 bool4]
+[X.Id string(X.FirstName) bool1 bool2 bool3 bool4]
 
 %%  X(bool4,{'Id', 'Age','Gender','FirstName'})

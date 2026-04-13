@@ -1,0 +1,9 @@
+for index = 0:5
+    disp(index)
+end
+
+n=10
+f=zeros(n,1)
+f(2)=1
+for i=3:n
+    f(index)
