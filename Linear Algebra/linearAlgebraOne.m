@@ -3,3 +3,4 @@ B=[25;25; 33];
 x=inv(A)*B
 
 %% diag creates a diagonal matrix diag([values], position)
+%% gallery: helps to create different kinds of matrix

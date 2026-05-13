@@ -1,0 +1,17 @@
+T = readtable("soft-drinks.xlsx")
+
+disp(head(T))
+disp("variables")
+disp(T.Properties.VariableNames)
+
+% Contingency table
+CT = crosstab(T.Word, T.Brand)
+
+wordcats = categories(categorical(T.Word))
+Brandcats = categories(categorical(T.Brand))
+
+CTtable = array2table(CT, 'RowNames',wordcats, 'VariableNames',Brandcats)
+disp("Contingency table")
+disp(CTtable)
+
+% 
